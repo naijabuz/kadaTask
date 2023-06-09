@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM 3 EXERCISE</title>
+</head>
+<body>
+
+    <!-- TITLE -->
+
+    <h1>Survey Form</h1>
+
+    <!-- FORM AREA-->
+
+    <form>
+
+        <p>Let us know how we can improve FreeCodeCamp</p>
+
+        <label for="name">Name: </label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+
+        <br><br>
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+
+        <br><br>
+
+        <label for="age">Age: </label>
+        <input type="number" name="age" placeholder="Age" min="18" max="30" step="1" required>
+
+        <!-- CURRENT ROLE SECTION-->
+
+        <br><br>
+     
+        <label for="roles">Which option best describes your current role: </label>
+        
+        <select>
+            <option value="student" selected>Student</option>
+            <option value="graduate">Graduate</option>
+            <option value="employed">Employed</option>
+            <option value="self-employed">Self Employed</option>
+          </select>
+
+        <!-- RECOMMENDATION SECTION-->
+
+        <br><br>
+
+        <label for="recommend">How likely is that you would recommend FreeCodeCamp to a friend?</label>
+
+        <br><br>
+
+        <input type="radio" value="Definitely" name="recommend">
+        <label for="definitely">Definitely</label>
+
+        <br>
+
+        <input type="radio" value="Maybe" name="recommend">
+        <label for="maybe">Maybe</label>
+
+        <br>
+
+        <input type="radio" value="Not-Sure" name="recommend">
+        <label for="not-sure">Not Sure</label>
+
+        
+
+        <!-- LIKE MOST SECTION -->
+
+        <br><br>
+     
+        <label for="like">What do you like most in FCC: </label>
+
+        <select>
+            <option value="Select an option" selected>Select an option</option>
+            <option value="Easy to understand">Easy to understand</option>
+            <option value="Detailed learning roadmap">Detailed learning roadmap</option>
+            <option value="Robust resources and guides">Robust resources and guides</option>
+          </select>
+
+        <!-- LAST SECTION -->
+
+        <br><br>
+
+        <label for="future">Things that should be improved in the future (Check all that apply)</label>
+
+        <br><br>
+
+        <input type="checkbox" value="front-end projects" name="future">
+        <label for="frontend">Front-end Projects</label>
+
+        <br>
+
+        <input type="checkbox" value="back-end projects" name="future">
+        <label for="backend">Back-end Projects</label>
+
+        <br>
+
+        <input type="checkbox" value="data visualization" name="future">
+        <label for="data">Data Visualization</label>
+
+        
+    </form>
+</body>
+</html>
